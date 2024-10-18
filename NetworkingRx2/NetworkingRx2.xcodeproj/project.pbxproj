@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16C7A613EBACD1F213AD4C5E /* Pods_NetworkingRx2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065C2C2E3448515133A5FEE4 /* Pods_NetworkingRx2.framework */; };
+		235E2D8A2C50DBA100F6FD31 /* JSONEncoderDecoderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E2D892C50DBA100F6FD31 /* JSONEncoderDecoderProtocol.swift */; };
+		23D89B592C4E5D3D00D015E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D89B582C4E5D3D00D015E2 /* Assets.xcassets */; };
+		23D89B6D2C4E60C400D015E2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D89B6C2C4E60C400D015E2 /* NetworkError.swift */; };
+		23D89B6F2C4E612800D015E2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D89B6E2C4E612800D015E2 /* HTTPMethod.swift */; };
+		23D89B712C4E618100D015E2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D89B702C4E618100D015E2 /* Endpoint.swift */; };
+		23D89B732C4E625500D015E2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D89B722C4E625500D015E2 /* NetworkService.swift */; };
+		23D89B752C4E638600D015E2 /* EncodingDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D89B742C4E638600D015E2 /* EncodingDecoding.swift */; };
+		23D89B772C4E641F00D015E2 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D89B762C4E641F00D015E2 /* APIClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		065C2C2E3448515133A5FEE4 /* Pods_NetworkingRx2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingRx2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235E2D892C50DBA100F6FD31 /* JSONEncoderDecoderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoderDecoderProtocol.swift; sourceTree = "<group>"; };
+		23D89B4C2C4E5D3B00D015E2 /* NetworkingRx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingRx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D89B582C4E5D3D00D015E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23D89B5D2C4E5D3D00D015E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D89B6C2C4E60C400D015E2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		23D89B6E2C4E612800D015E2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		23D89B702C4E618100D015E2 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		23D89B722C4E625500D015E2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		23D89B742C4E638600D015E2 /* EncodingDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingDecoding.swift; sourceTree = "<group>"; };
+		23D89B762C4E641F00D015E2 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5A22D2FF2D98423DE3FE536A /* Pods-NetworkingRx2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingRx2.release.xcconfig"; path = "Target Support Files/Pods-NetworkingRx2/Pods-NetworkingRx2.release.xcconfig"; sourceTree = "<group>"; };
+		E46636930E48B017EA56ACD1 /* Pods-NetworkingRx2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingRx2.debug.xcconfig"; path = "Target Support Files/Pods-NetworkingRx2/Pods-NetworkingRx2.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23D89B492C4E5D3B00D015E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C7A613EBACD1F213AD4C5E /* Pods_NetworkingRx2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235E2D842C50DAD700F6FD31 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				235E2D892C50DBA100F6FD31 /* JSONEncoderDecoderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		23D89B432C4E5D3B00D015E2 = {
+			isa = PBXGroup;
+			children = (
+				23D89B4E2C4E5D3B00D015E2 /* NetworkingRx2 */,
+				23D89B4D2C4E5D3B00D015E2 /* Products */,
+				E0BC6AD7F2CBBDC215FD6D97 /* Pods */,
+				98658BF84FB83B9DD01ACE2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23D89B4D2C4E5D3B00D015E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23D89B4C2C4E5D3B00D015E2 /* NetworkingRx2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23D89B4E2C4E5D3B00D015E2 /* NetworkingRx2 */ = {
+			isa = PBXGroup;
+			children = (
+				23D89B632C4E5FD400D015E2 /* Classes */,
+				23D89B582C4E5D3D00D015E2 /* Assets.xcassets */,
+				23D89B5D2C4E5D3D00D015E2 /* Info.plist */,
+			);
+			path = NetworkingRx2;
+			sourceTree = "<group>";
+		};
+		23D89B632C4E5FD400D015E2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				235E2D842C50DAD700F6FD31 /* Protocols */,
+				23D89B642C4E5FE300D015E2 /* NetworkError */,
+				23D89B652C4E5FFA00D015E2 /* HTTPMethod */,
+				23D89B672C4E602A00D015E2 /* EncodingDecoding */,
+				23D89B662C4E600C00D015E2 /* Endpoint */,
+				23D89B682C4E603B00D015E2 /* NetworkService */,
+				23D89B6B2C4E607000D015E2 /* APIClient */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		23D89B642C4E5FE300D015E2 /* NetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				23D89B6C2C4E60C400D015E2 /* NetworkError.swift */,
+			);
+			path = NetworkError;
+			sourceTree = "<group>";
+		};
+		23D89B652C4E5FFA00D015E2 /* HTTPMethod */ = {
+			isa = PBXGroup;
+			children = (
+				23D89B6E2C4E612800D015E2 /* HTTPMethod.swift */,
+			);
+			path = HTTPMethod;
+			sourceTree = "<group>";
+		};
+		23D89B662C4E600C00D015E2 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				23D89B702C4E618100D015E2 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		23D89B672C4E602A00D015E2 /* EncodingDecoding */ = {
+			isa = PBXGroup;
+			children = (
+				23D89B742C4E638600D015E2 /* EncodingDecoding.swift */,
+			);
+			path = EncodingDecoding;
+			sourceTree = "<group>";
+		};
+		23D89B682C4E603B00D015E2 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				23D89B722C4E625500D015E2 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		23D89B6B2C4E607000D015E2 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				23D89B762C4E641F00D015E2 /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		98658BF84FB83B9DD01ACE2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				065C2C2E3448515133A5FEE4 /* Pods_NetworkingRx2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0BC6AD7F2CBBDC215FD6D97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E46636930E48B017EA56ACD1 /* Pods-NetworkingRx2.debug.xcconfig */,
+				5A22D2FF2D98423DE3FE536A /* Pods-NetworkingRx2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23D89B4B2C4E5D3B00D015E2 /* NetworkingRx2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D89B602C4E5D3D00D015E2 /* Build configuration list for PBXNativeTarget "NetworkingRx2" */;
+			buildPhases = (
+				E206F18B49C6DFF4A15E9A01 /* [CP] Check Pods Manifest.lock */,
+				23D89B482C4E5D3B00D015E2 /* Sources */,
+				23D89B492C4E5D3B00D015E2 /* Frameworks */,
+				23D89B4A2C4E5D3B00D015E2 /* Resources */,
+				CCFE9D83779FF942F557E4A3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkingRx2;
+			productName = NetworkingRx2;
+			productReference = 23D89B4C2C4E5D3B00D015E2 /* NetworkingRx2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23D89B442C4E5D3B00D015E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					23D89B4B2C4E5D3B00D015E2 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 23D89B472C4E5D3B00D015E2 /* Build configuration list for PBXProject "NetworkingRx2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23D89B432C4E5D3B00D015E2;
+			productRefGroup = 23D89B4D2C4E5D3B00D015E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23D89B4B2C4E5D3B00D015E2 /* NetworkingRx2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23D89B4A2C4E5D3B00D015E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D89B592C4E5D3D00D015E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CCFE9D83779FF942F557E4A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkingRx2/Pods-NetworkingRx2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkingRx2/Pods-NetworkingRx2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkingRx2/Pods-NetworkingRx2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E206F18B49C6DFF4A15E9A01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkingRx2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23D89B482C4E5D3B00D015E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D89B6D2C4E60C400D015E2 /* NetworkError.swift in Sources */,
+				23D89B6F2C4E612800D015E2 /* HTTPMethod.swift in Sources */,
+				23D89B712C4E618100D015E2 /* Endpoint.swift in Sources */,
+				23D89B752C4E638600D015E2 /* EncodingDecoding.swift in Sources */,
+				235E2D8A2C50DBA100F6FD31 /* JSONEncoderDecoderProtocol.swift in Sources */,
+				23D89B732C4E625500D015E2 /* NetworkService.swift in Sources */,
+				23D89B772C4E641F00D015E2 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23D89B5E2C4E5D3D00D015E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23D89B5F2C4E5D3D00D015E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23D89B612C4E5D3D00D015E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E46636930E48B017EA56ACD1 /* Pods-NetworkingRx2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkingRx2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rx.NetworkingRx2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23D89B622C4E5D3D00D015E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A22D2FF2D98423DE3FE536A /* Pods-NetworkingRx2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkingRx2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rx.NetworkingRx2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23D89B472C4E5D3B00D015E2 /* Build configuration list for PBXProject "NetworkingRx2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D89B5E2C4E5D3D00D015E2 /* Debug */,
+				23D89B5F2C4E5D3D00D015E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23D89B602C4E5D3D00D015E2 /* Build configuration list for PBXNativeTarget "NetworkingRx2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D89B612C4E5D3D00D015E2 /* Debug */,
+				23D89B622C4E5D3D00D015E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23D89B442C4E5D3B00D015E2 /* Project object */;
+}
